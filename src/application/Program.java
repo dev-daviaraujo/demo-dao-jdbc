@@ -40,7 +40,11 @@ public class Program {
 		sellerDao.update(seller);
 		System.out.println("Update Completed");
 		
-		
+		System.out.println(" === TEST 6: seller delete ===");
+		seller = sellerDao.findById(12);
+		System.out.println(seller);
+		sellerDao.deleteById(12);
+		System.out.println("Delete Completed");	
 	}
 	
 }
