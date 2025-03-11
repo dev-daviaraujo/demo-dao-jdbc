@@ -18,9 +18,16 @@ public class Program2 {
 		/*System.out.println("--- TEST 2: update department ---");
 		departmentDao.update(new Department(6, "New dept"));*/
 		
-		System.out.println("--- TEST 5: findAll department ---");
+		System.out.println("--- TEST 3: deleteById department ---");
+		departmentDao.deleteById(6);
+		
+		/*System.out.println("--- TEST 4: findById department ---");
+		Department dep = departmentDao.findById(3);
+		System.out.println(dep);*/
+		
+		/*System.out.println("--- TEST 5: findAll department ---");
 		List<Department> listDept = departmentDao.findAll();
-		listDept.forEach(System.out::println);
+		listDept.forEach(System.out::println);*/
 		
 
 	}
