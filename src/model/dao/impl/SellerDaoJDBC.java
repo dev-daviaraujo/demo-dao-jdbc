@@ -33,7 +33,7 @@ public class SellerDaoJDBC implements SellerDao {
 			String sql = "INSERT INTO seller "
 					+ "(Name, Email, BirthDate, BaseSalary, DepartmentId) "
 					+ "VALUES "
-					+ "(?, ?, ?, ?, ?)";
+					+ "(?, ?, ?, ?, ?) ";
 			
 			st = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 			st.setString(1, obj.getName());
